@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern & Traditional Healthcare</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #263238;
+    background: #f5faf8;
+}
+
+header {
+    background: #087f70;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #c5f6e7;
+}
+
+.hero {
+    min-height: 480px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: linear-gradient(120deg, #d9f5ec, #edf8ff);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    color: #08695e;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.hero-art {
+    font-size: 125px;
+    text-align: center;
+    min-width: 180px;
+}
+
+.btn {
+    display: inline-block;
+    background: #087f70;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #055b51;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 31px;
+    color: #087f70;
+    margin-bottom: 12px;
+}
+
+.section-intro {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    text-align: center;
+    color: #54636a;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000d;
+    border-bottom: 4px solid #72cdb4;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .emoji {
+    font-size: 43px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #087f70;
+    margin-bottom: 10px;
+}
+
+.traditional {
+    background: #fff8e8;
+}
+
+.traditional .card {
+    border-bottom-color: #e6b85c;
+}
+
+.traditional .card h3 {
+    color: #9a6510;
+}
+
+.comparison {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 25px;
+    min-width: 550px;
+}
+
+th, td {
+    border: 1px solid #dce6e3;
+    padding: 14px;
+    text-align: left;
+}
+
+th {
+    background: #087f70;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #eef8f4;
+}
+
+.tips {
+    background: #e4f5ef;
+}
+
+.tips-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.tips-list li {
+    margin: 12px 0;
+    list-style-position: inside;
+}
+
+.notice {
+    background: #fff2cf;
+    border-left: 5px solid #d6a334;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.contact {
+    text-align: center;
+    background: #ffffff;
+}
+
+footer {
+    background: #064e46;
+    color: white;
+    text-align: center;
+    padding: 24px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 33px;
+    }
+
+    .hero-art {
+        font-size: 90px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">💚 HealthCare Hub</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#modern">Modern Care</a>
+        <a href="#traditional">Traditional Care</a>
+        <a href="#comparison">Comparison</a>
+        <a href="#tips">Health Tips</a>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Modern Healthcare & Traditional Healthcare Methods</h1>
+        <p>
+            Discover how modern medical science and traditional
+            healthcare practices can contribute to a healthier life.
+            Learn about their benefits, differences, and responsible use.
+        </p>
+        <a href="#modern" class="btn">Explore Healthcare</a>
+    </div>
+    <div class="hero-art">🩺🌿</div>
+</section>
+
+<!-- MODERN HEALTHCARE -->
+<section id="modern">
+    <h2 class="section-title">Modern Healthcare</h2>
+    <p class="section-intro">
+        Modern healthcare uses scientific research, medical technology,
+        trained professionals, and evidence-based treatments to prevent,
+        diagnose, and manage diseases.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">🏥</div>
+            <h3>Hospitals & Clinics</h3>
+            <p>
+                Hospitals and clinics provide medical consultations,
+                emergency services, surgery, and specialized treatment.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💊</div>
+            <h3>Modern Medicines</h3>
+            <p>
+                Medicines prescribed by qualified healthcare professionals
+                help treat infections, manage chronic diseases, and
+                relieve symptoms.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🔬</div>
+            <h3>Medical Technology</h3>
+            <p>
+                X-rays, MRI scans, laboratory tests, and other technologies
+                help doctors identify and monitor medical conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💉</div>
+            <h3>Vaccination</h3>
+            <p>
+                Vaccines help protect people against specific infectious
+                diseases and support public health.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- TRADITIONAL HEALTHCARE -->
+<section class="traditional" id="traditional">
+    <h2 class="section-title">Traditional Healthcare Methods</h2>
+    <p class="section-intro">
+        Traditional healthcare includes practices passed down through
+        generations. Their safety and effectiveness vary, so each
+        treatment should be evaluated individually.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">🌿</div>
+            <h3>Ayurveda</h3>
+            <p>
+                Ayurveda is a traditional Indian system that emphasizes
+                lifestyle, diet, and herbal preparations. Some products
+                can cause side effects or interact with medicines.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🧘</div>
+            <h3>Yoga & Meditation</h3>
+            <p>
+                Yoga and meditation can support flexibility, stress
+                management, balance, and general well-being when
+                practiced appropriately.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🍵</div>
+            <h3>Traditional Home Practices</h3>
+            <p>
+                Rest, warm fluids, and certain simple comfort measures
+                may help with minor symptoms. They are not substitutes
+                for necessary medical treatment.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🥗</div>
+            <h3>Traditional Diets</h3>
+            <p>
+                Balanced meals prepared with vegetables, fruits,
+                pulses, whole grains, and appropriate spices can
+                support good nutrition.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- COMPARISON -->
+<section id="comparison">
+    <h2 class="section-title">Modern vs Traditional Healthcare</h2>
+    <p class="section-intro">
+        Both approaches have different purposes. Choosing a treatment
+        should depend on the condition, available evidence, and
+        professional medical advice.
+    </p>
+
+    <div class="comparison">
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Modern Healthcare</th>
+                <th>Traditional Healthcare</th>
+            </tr>
+            <tr>
+                <td>Approach</td>
+                <td>Scientific and evidence-based medicine</td>
+                <td>Traditional systems and inherited practices</td>
+            </tr>
+            <tr>
+                <td>Diagnosis</td>
+                <td>Clinical examination, tests, and imaging</td>
+                <td>Methods vary by traditional system</td>
+            </tr>
+            <tr>
+                <td>Technology</td>
+                <td>Often uses advanced medical equipment</td>
+                <td>May focus on lifestyle and traditional remedies</td>
+            </tr>
+            <tr>
+                <td>Examples</td>
+                <td>Vaccination, surgery, prescribed medicines</td>
+                <td>Yoga, meditation, Ayurveda</td>
+            </tr>
+            <tr>
+                <td>Main consideration</td>
+                <td>Evidence, diagnosis, and treatment guidelines</td>
+                <td>Evidence and safety must be assessed for each practice</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="notice">
+        <strong>Important:</strong>
+        Traditional does not automatically mean safe, and modern
+        does not mean every treatment is suitable for everyone.
+        Consult a qualified healthcare professional before starting
+        a treatment or combining different approaches.
+    </div>
+</section>
+
+<!-- HEALTH TIPS -->
+<section class="tips" id="tips">
+    <h2 class="section-title">Healthy Lifestyle Tips</h2>
+    <p class="section-intro">
+        Small, consistent habits can make a positive difference
+        to your physical and mental well-being.
+    </p>
+
+    <ul class="tips-list">
+        <li>Eat a balanced and nutritious diet.</li>
+        <li>Exercise regularly according to your abilities.</li>
+        <li>Maintain a regular sleep schedule.</li>
+        <li>Practice yoga or meditation if appropriate for you.</li>
+        <li>Drink safe water and maintain personal hygiene.</li>
+        <li>Keep vaccinations and routine health check-ups up to date.</li>
+        <li>Take medicines only as directed by a qualified professional.</li>
+        <li>Seek prompt medical attention for serious or persistent symptoms.</li>
+    </ul>
+</section>
+
+<!-- CONTACT / ABOUT -->
+<section class="contact" id="contact">
+    <h2 class="section-title">About This Website</h2>
+    <p>
+        This educational website introduces modern and traditional
+        healthcare methods and encourages informed, safe health choices.
+    </p>
+    <p style="margin-top: 15px;">
+        <strong>Our message:</strong> Health, knowledge, and prevention
+        are important for everyone.
+    </p>
+</section>
+
+<footer>
+    <p>💚 HealthCare Hub</p>
+    <p>Modern Healthcare & Traditional Healthcare Methods</p>
+    <p>Educational Project | 2026</p>
+    <p>For educational purposes only; not a substitute for medical advice.</p>
+</footer>
+
+</body>
+</html>
